@@ -1,4 +1,4 @@
-resource "google_compute_instance" "exp" {
+/*resource "google_compute_instance" "exp" {
   name         = "test-exp"
   machine_type = var.env=="dev"?"n2-standard-2": "n2-standard-4"
   zone         = "us-central1-a"
@@ -14,4 +14,4 @@ resource "google_compute_instance" "exp" {
 }
 variable "env" {
   default = "dev"
-}
+}*/

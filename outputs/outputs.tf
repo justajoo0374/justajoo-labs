@@ -1,5 +1,5 @@
-resource "google_compute_instance" "vm" {
-  name         = "vm"
+resource "google_compute_instance" "vm1" {
+  name         = "vm1"
   machine_type = "n2-standard-2"
   zone         = "us-central1-a"
   project = "magnetic-flare-454316-h0"

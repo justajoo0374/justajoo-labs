@@ -1,4 +1,4 @@
-resource "google_compute_instance" "vm1" {
+/*resource "google_compute_instance" "vm1" {
   name         = "test1"
   machine_type = "n2-standard-2"
   zone         = "us-central1-a"
@@ -15,6 +15,6 @@ resource "google_compute_instance" "vm1" {
 output "ip" {
   value = google_compute_instance.vm1.network_interface.0.network_interface
 }
-/*output "ip" {
+output "ip" {
   value = google_compute_instance.vm.network_interface.0.network_interface
 }*/

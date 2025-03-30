@@ -19,7 +19,7 @@
 #create vm with clout with unique name insteda of just adding number like(0,1,2)
 resource "google_compute_instance" "test" {
   count = 2
-  name         = "var.instance[count.index]"
+  name         = var.instance[count.index]
   machine_type = "n2-standard-2"
   zone         = "us-central1-a"
   project = "magnetic-flare-454316-h0"

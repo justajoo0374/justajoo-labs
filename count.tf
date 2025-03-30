@@ -1,6 +1,6 @@
-resource "google_compute_instance" "count" {
+/*resource "google_compute_instance" "count" {
   count = 3
-  #name         = "vm-${count.index}"
+  name         = "vm-${count.index}"
   machine_type = "n2-standard-2"
   zone         = "us-central1-a"
   project = "magnetic-flare-454316-h0"
@@ -12,4 +12,4 @@ resource "google_compute_instance" "count" {
   network_interface {
     network = "default"
   }
-}
+}*/

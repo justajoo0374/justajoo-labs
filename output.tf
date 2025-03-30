@@ -14,3 +14,7 @@ resource "google_compute_instance" "vm" {
     network = "default"
   }
 }
+output "ip" {
+  value = google_compute_instance.vm.network_interface.0.network_ip
+}
+

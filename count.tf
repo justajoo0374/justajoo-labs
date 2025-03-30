@@ -31,6 +31,7 @@ resource "google_compute_instance" "count" {
   network_interface {
     network = "default"
   }
+}
 varibale "instance" {
    default = ["dev", "prod"]
    type =list

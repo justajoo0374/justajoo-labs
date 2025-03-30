@@ -1,5 +1,5 @@
-resource "google_compute_instance" "vm2" {
-  name         = "vm2"
+resource "google_compute_instance" "vm" {
+  name         = "test"
   machine_type = "n2-standard-2"
   zone         = "us-central1-a"
   project = "magnetic-flare-454316-h0"
@@ -16,5 +16,5 @@ resource "google_compute_instance" "vm2" {
   value = google_compute_instance.vm1.network_interface.0.network_ip
 }*/
 output "ip" {
-  value = "google_compute_instance.vm2.network_interface"
+  value = google_compute_instance.vm
 }

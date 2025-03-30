@@ -1,6 +1,6 @@
-resource "google_compute_instance" "counts" {
+resource "google_compute_instance" "count" {
   count = 3
-  name         = "vm-${count.index}"
+  #name         = "vm-${count.index}"
   machine_type = "n2-standard-2"
   zone         = "us-central1-a"
   project = "magnetic-flare-454316-h0"

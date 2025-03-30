@@ -1,3 +1,6 @@
+provider "google" {
+    project ="project = "magnetic-flare-454316-h0"
+}
 resource "google_compute_instance" "default" {
   name         = "my-instance"
   machine_type = "n2-standard-2"

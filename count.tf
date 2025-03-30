@@ -32,7 +32,7 @@ resource "google_compute_instance" "count" {
     network = "default"
   }
 }
-varibale "instance" {
+variable "instance" {
    default = ["dev", "prod"]
    type =list
 }
